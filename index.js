@@ -1,10 +1,10 @@
 require('dotenv').config();
-const express = require('express') // imlport statement
+const express = require('express')
 const app = express() // app method
 const port = 3000; //localhost port
 
 app.get('/', (req, res) => {
-  res.send('Hello World!') //request ka response
+  res.send('Hello World!')
 })
 
 app.get('/facebook',(req,res)=>{
@@ -16,6 +16,7 @@ app.get('/youtube',(req,res)=>{
   )
 })
 
+
 app.listen(process.env.PORT, () => {
-  console.log(`Example app listening on port ${port}`) // print the desired input to the desired output
+  console.log(`Example app listening on port ${port}`) 
 })
